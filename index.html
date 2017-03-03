@@ -1,241 +1,109 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-    <head>
-        <title>Secciones y líneas generales de un documento HTML5</title>
 
-        <meta charset="utf-8" />
-            
-        <style type="text/css">
+    <head>
         
+        <meta charset="utf-8">
+
+        <title>Date</title>
+        
+        <style type="text/css">
+            
             body {
                 
-                width: 1000px;
-                margin: 0 auto;
+                font-family: Arial, Helvetica, sans-serif;
+                margin-left: 35px;
                 
             }
-                  
-            #cabecera {
-                
-                height: 78px;
-                margin-top: 15px !important;
-                padding-top: 0.50em;
-                margin: 0 auto;
-
-            }
-            
-            .texto-cabecera {
-                
-                font-family: Arial, Helvetica;
-                font-size: 34px;
-                color: #d35a37;
-                
-            }
-            
-            .logohtml {
-                
-                vertical-align: middle;
-                margin-bottom: 0.75em;
-                
-            }
-            
+        
             p {
                 
-                font-family: Arial, Helvetica;
-                color: #383A3F;
-            }
-            
-            #contenedor-parrafo-cabecera {
+                font-size: 20px;
                 
-                background-color: #d35a37;
-                float: left;
-                border-radius: 0.35em;
-                margin: 0 auto;
-
-            }
-            
-            .parrafo-cabecera {
-                
-                margin: 15px 20px;
-                color: #e4bb7f;
-                font-weight: lighter;
-                font-size: 0.95em;
-
-            }
-            
-            #lista {
-                
-                margin: 15px auto;
-                float: left;
-                
-            }
-            
-            h2 {
-                
-                font-family: Arial, Helvetica;
-                color: #d35a37;
-                font-size: 1.2em;
-                
-            }
-            
-            ol {
-                
-                padding-top: 0px;
-                margin-top: 0px;
-                
-            }
-            
-            li {
-                
-                font-family: Arial, Helvetica;
-                color: #383A3F;
-                             
-            }
-            
-            h3 {
-                
-                font-family: Arial, Helvetica;
-                color: #d35a37;
-                font-size: 1rem;
-                margin: 20px;
-                
-            }
-            
-            #contenedor-lista {
-                
-                width: 735px;
-                float: left;
-                margin: 0px 12px 0 0px;
-                                
-            }
-            
-            #contenedor-explicacion {
-                
-                background-color: #d35a37;
-                width: 252px;
-                float: right;
-                border-radius: 0.35em;
-                                
-            }
-            
-            #final {
-                
-                float: left;
-                margin: 0 auto;
-                
-            }
-            
-            #tabla {
-            
-                border: 2px solid #d35a37;
-                border-radius: 0.35em;
-                width: 1000px;
-                margin: 0 auto;
-                padding: 0;
-                float: left;
-            
-            }
-            
-            .columna1 {
-                
-                width: 400px;
-                float: left;
-                                
-            }
-            
-            .columna2 {
-                
-                border-left: 1px solid #d35a37;
-                                
-            }
-            
-            .parrafo-tabla {
-                
-                margin: 20px;
-                color: #383A3F;
-                font-weight: lighter;
-
-            }
-            
-            footer {
-                
-                float: left;
-                margin-top: 15px;
-            }
-            
-            body a {
-                
-                text-decoration: none;
-                color: darkorange;
-            }
-            
-            body a:hover {
-                
-                color: #4F86C6;
             }
         
         </style>
-        
+     
     </head>
 
     <body>
-        <header>
-            <div id="cabecera">
-                <span class="texto-cabecera"><strong>Secciones y líneas generales de un documento</strong></span>
-                <img class="logohtml" height="65" src="http://i66.tinypic.com/30kaghv.jpg">
-            </div>
-            <div id="contenedor-parrafo-cabecera">
-                <p class="parrafo-cabecera">La especificación HTML5 trae muchos nuevos elementos a los desarrolladores web, permitiéndoles describir la estructura de un documento web con semántica estandarizada. Este documento describe estos elementos y cómo usarlos para definir el perfil de cualquier documento.</p>
-            </div>   
-        </header>
-
-        <section id="lista">
-            <h2>Problemas resueltos por HTML5</h2>
-            <div id="lista+explicacion">
-                <div id="contenedor-lista">
-                    <ol>
-                        <li>HTML5 quita la necesidad de elementos <strong>&ltdiv&gt</strong> para definir secciones semánticas sin definir valores específicos para los atributos <strong>class</strong>, introduciendo un nuevo elemento: <strong>&ltsection&gt</strong>, el elemento de sección HTML.</li>
-                        <br>
-                        <li>Mezclar varios documentos es difícil: la inclusión de un sub-documento en un documento principal. Esto se resuelve en HTML5 con los elementos de seccionado (<strong>&ltarticle&gt</strong>, <strong>&ltsection&gt</strong>, <strong>&ltnav&gt</strong> y <strong>&ltaside&gt</strong>) son siempre subsecciones de su sección ancestra más cercana.</li>
-                        <br>
-                        <li>HTML5 introduce el elemento <strong>&lthgroup&gt</strong> que oculta todos los elementos de cabecera excepto el primero de más alto rango (por ejemplo, <strong>&lthgroup&gt&lth1&gtJustine&lt/h1&gt&lth2&gt</strong>Les Malheurs de la Vertu<strong>&lt/h2&gt&lt/hgroup&gt</strong> crea el perfil 1. Justine).</li>
-                        <br>
-                        <li>Un documento puede tener secciones especiales conteniendo información relacionada que no es parte del flujo principal. HTML5 introduce el elemento <strong>&ltaside&gt</strong> permitiendo a dichas secciones no ser parte del perfil principal.</li>
-                        <br>
-                        <li>Hay información relacionada no al documento pero si al sitio entero, como logos, menús, tablas de contenidos, o información de derechos de autor y notas legales. Para ese propósito, HTML5 introduce tres elementos de sección específicos: <strong>&ltnav&gt</strong> para colecciones de enlaces, como una tabla de contenidos, <strong>&ltfooter&gt</strong> y <strong>&ltheader&gt</strong> información relacionada con el sitio.</li>
-                    </ol>
-                </div>    
-                <div id="contenedor-explicacion">
-                    <p class="parrafo-cabecera">La definición de la estructura de un documento en HTML 4 y su algoritmo de perfilado es muy tosco y genera numerosos problemas. De manera más general, HTML5 trae precisión a las características de seccionado y cabecera, permitiendo a los perfiles de documento ser predecibles y usados por el navegador para mejorar la experiencia de usuario.</p>
-                </div>
-            </div>
-        </section>
         
-        <section id="final">
-            <h2>El algoritmo de perfilado de HTML5</h2>
-            <table id="tabla">
-                <tr>
-                    <th class="columna1">
-                        <h3>Secciones en HTML5</h3>
-                    </th>
-                    <th class="columna2">
-                        <h3>Ejemplo</h3>
-                    </th>
-                </tr>   
-                <tr>
-                    <td class="columna1">
-                        <p class="parrafo-tabla">Todo el contenido incluido dentro del elemento <strong>&ltbody&gt</strong> es parte de una sección. Las secciones en HTML5 pueden ser anidadas. Además de la sección principal, definida por el elemento <strong>&ltbody&gt</strong>, los límites de la sección son definidos explícita o implícitamente. La secciones definidas explícitamente son el contenido definido en las etiquetas <strong>&ltbody&gt</strong>, <strong>&ltsection&gt</strong>, <strong>&ltarticle&gt</strong>, <strong>&ltaside&gt</strong>, <strong>&ltfooter&gt</strong>, <strong>&ltheader&gt</strong>, y <strong>&ltnav&gt</strong>. Cada sección puede tener su propia jerarquía de cabeceras. Por lo tanto, incluso una sección anidada puede tener un elemento <strong>&lth1&gt</strong>.</p>
-                        <p class="parrafo-tabla"><a href="">Consulte también <strong>Definiendo cabeceras en HTML5.</strong></a></p>
-                    </td>
-                    <td class="columna2">
-                        <p class="parrafo-tabla">&ltsection&gt<br>&nbsp&nbsp&nbsp&nbsp&lth1&gtForest elephants&lt/h1&gt<br>&lt/section&gt<br>&ltsection&gt<br>&nbsp&nbsp&nbsp&nbsp&lth1&gtIntroduction&lt/h1&gt<br>&nbsp&nbsp&nbsp&nbsp&ltp&gtIn this section, we discuss the lesser known forest elephants.&lt/p&gt<br>&lt/section&gt<br>&ltsection&gt<br>&nbsp&nbsp&nbsp&nbsp&lth1&gtHabitat&lt/h1&gt<br>&nbsp&nbsp&nbsp&nbsp&ltp&gtForest elephants do not live in trees but among them.&lt/p&gt<br>&lt/section&gt<br>&ltsection&gt<br>&nbsp&nbsp&nbsp&nbsp&ltaside&gt<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&ltp&gtadvertising block&lt/p&gt<br>&nbsp&nbsp&nbsp&nbsp&lt/aside&gt<br>&lt/section&gt<br>&ltfooter&gt<br>&nbsp&nbsp&nbsp&nbsp&ltp&gt(c) 2010 The Example company&lt/p&gt<br>&lt/footer&gt</p>
-                    </td>
-                </tr>                            
-            </table>
-        </section>
-        <br>    
-        <footer>
-            <p><a href="mailto:ruiz.montano@gmail.com">Ernesto Ruiz Montano</a></p>
-        </footer>
+        <h1 id="h1"></h1>
+        <p>Ernesto Ruiz M.</p>
+        <h2 id="h2">La fecha y la hora son:</h2>
+        <div id="fecha"></div>
+        <br>
+        <hr>
+        <div id="div2">
+            <p>Respuestas:</p>
+            <p id="a"></p>
+            <p id="b"></p>
+            <p id="c"></p>
+            <p id="d"></p>
+            <p id="e"></p>
+        
+        </div>
+        
+        <script type="text/javascript">
+        
+            var fecha = new Date();
+            var msj;
+
+            if (fecha.getHours() < 7)  {
+                
+                msj = "Buenas noches";
+            
+            } else
+                
+                if (fecha.getHours() < 12) {
+                    
+                    msj = "Buenos días";
+                
+                } else if (fecha.getHours() < 21) {
+                    
+                    msj = "Buenas tardes";
+                    
+                } else {
+                        
+                    msj = "Buenas noches";
+                        
+                }
+
+            document.getElementById("h1").innerHTML = msj;
+            document.getElementById("fecha").innerHTML = fecha;
+            
+    // ejercicio Ernesto:
+        //a:
+            var a = document.getElementById("h2").innerHTML
+            
+            document.getElementById("a").innerHTML = "a: <strong>innerHTML de 'h2' es</strong> " + a;
+            
+        //b:
+            var b = document.getElementById("h1").outerHTML
+            
+            document.getElementById("b").innerHTML = "b: <strong>outerHTML de 'h1' es</strong> " + b;
+            
+        //c:
+            
+            var c = location.href
+            
+            document.getElementById("c").innerHTML = "c: <strong>location.href es</strong> " + c;
+            
+        //d:
+            
+            var d = location
+            
+            document.getElementById("d").innerHTML = "d: <strong>location es</strong> " + d;    
+            
+        //e:
+            
+            var e1 = screen.width
+            var e2 = screen.height
+            
+            document.getElementById("e").innerHTML = "e: <strong>screen.width es</strong> " + e1 + " <strong>screen.height es</strong> " + e2; 
+        
+        </script>
+        
     </body>
     
 </html>
